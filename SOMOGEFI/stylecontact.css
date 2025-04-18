@@ -1,0 +1,137 @@
+/* Reinicio de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("IMAGENES/Login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+/* Estilo contenedor */
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  width: 90%;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info h2 {
+  color: #247c86dd;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: rgba(34, 17, 17, 0.7);
+}
+
+.contact-txt a {
+  color: #247c86dd;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  outline: none;
+  border: 2px solid #247c86dd;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* Botones de acción */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background-color: #247c86dd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #1e6a72;
+}
+
+.btn-cancel {
+  background-color: #d9534f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-cancel:hover {
+  background-color: #c9302c;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 20px;
+  }
+
+  .contact-info h2 {
+      font-size: 28px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      padding: 10px;
+  }
+
+  .submit-btn,
+  .btn-cancel {
+      font-size: 14px;
+  }
+}

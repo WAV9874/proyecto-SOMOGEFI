@@ -1,0 +1,71 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #247c86dd;
+}
+
+.background-image {
+  background-image: url("IMAGENES/Login.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.border-custom {
+  border: 2px solid #247c86dd;
+  background-color: #ffffffcc;
+}
+
+h2 {
+  color: #247c86dd;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-info {
+  background-color: #247c86dd;
+  border-color: #247c86dd;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #247c86dd;
+  border-color: #247c86dd;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.navbar {
+  background-color: #247c86dd !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  background-color: #1e6a72;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 14px;
+}

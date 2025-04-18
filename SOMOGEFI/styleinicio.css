@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #E5ECF9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;  
+  max-width: 1000px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;  
+  background-color: white;
+}
+
+/* Sección de información */
+.info {
+  background-image: url("IMAGENES/Login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.txt-1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.info h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.info hr {
+  width: 50px;
+  border: 3px solid white;
+  margin: 10px auto;
+}
+
+.txt-2 {
+  font-size: 16px;
+}
+
+/* Formulario */
+.form {
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+}
+
+.form h2 {
+  color: #247c86dd;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.form p {
+  font-size: 16px;
+  color: rgba(34, 17, 17, 0.7);
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  outline: none;
+  border: 2px solid #247c86dd;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.inputs a {
+  color: #247c86dd;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.submit {
+  background-color: #247c86dd;
+  padding: 12px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit:hover {
+  background-color: #247c86dd;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .info {
+    display: none;  
+  }
+
+  .form {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .form h2 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 20px;
+  }
+
+  .form h2 {
+    font-size: 24px;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .submit {
+    font-size: 16px;
+  }
+}

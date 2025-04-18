@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("IMAGENES/Login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+
+.fondo-contenedor {
+  background-color: #247c86dd;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contenedor-principal {
+  background-color: #ffffffdd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #247c86;
+  padding: 20px;
+}
+
+h1, h4 {
+  color: #247c86dd;
+}
+
+.table {
+  background-color: #f7f7f7;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #247c86dd;
+}
+
+th {
+  background-color: #247c86dd;
+  color: #ffffff;
+}
+
+tfoot td {
+  font-weight: bold;
+  color: #247c86dd;
+}
+
+.intereses-ganados {
+  background-color: #d8f3dc;
+}
+
+#listaCreditos {
+  border: 1px solid #247c86dd;
+}
+
+#tablaAmortizacion {
+  margin-top: 20px;
+}
+
+/* Estilo para el Header Genérico */
+.navbar {
+  background-color: #247c86dd !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  background-color: #1e6a72;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 14px;
+}

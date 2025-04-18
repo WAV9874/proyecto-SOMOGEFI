@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Ahorros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleahorros.css">
+</head>
+
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="CONTENIDO.HTML">SOMOGEFI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="CONTENIDO.HTML">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="ASOCIADOS.HTML">Asociados</a></li>
+                <li class="nav-item"><a class="nav-link" href="TRANSACCIONES.HTML">Transacciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="CREDITO.HTML">Créditos</a></li>
+                <li class="nav-item"><a class="nav-link" href="AHORROS.HTML">Ahorros</a></li>
+                <li class="nav-item"><a class="nav-link" href="SIMULADOR.HTML">Simulación</a></li>
+                <li class="nav-item"><a class="nav-link" href="OPERARIOS.HTML">Operarios</a></li>
+                <li class="nav-item"><a class="nav-link" href="CONTACTO.HTML">Contacto</a></li>
+            </ul>
+            <div class="d-flex">
+                <button onclick="history.back()" class="btn btn-light me-2">Atrás</button>
+                <a href="CONTENIDO.HTML" class="btn btn-danger">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</nav 
+
+
+<body>
+    <div class="fondo-contenedor">
+        <div class="container mt-5 p-4 contenedor-principal">
+            <h1 class="text-center mb-4">Gestión de Ahorros</h1>
+            <table class="table table-bordered tabla-ahorros">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Cod Trans</th>
+                        <th>Descripción del Movimiento</th>
+                        <th>Saldo Anterior</th>
+                        <th>Valor Transacción</th>
+                        <th>Saldo Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/03/2025</td>
+                        <td>TR001</td>
+                        <td>Ahorro Inicial</td>
+                        <td>$0.00</td>
+                        <td>$1,000,000.00</td>
+                        <td>$1,000,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>10/03/2025</td>
+                        <td>TR002</td>
+                        <td>Depósito Adicional</td>
+                        <td>$1,000,000.00</td>
+                        <td>$200,000.00</td>
+                        <td>$1,200,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>20/03/2025</td>
+                        <td>TR003</td>
+                        <td>Retiro Parcial</td>
+                        <td>$1,200,000.00</td>
+                        <td>-$100,000.00</td>
+                        <td>$1,100,000.00</td>
+                    </tr>
+                    <tr class="intereses-ganados">
+                        <td>31/03/2025</td>
+                        <td>TR004</td>
+                        <td>Ganancia de Intereses</td>
+                        <td>$1,100,000.00</td>
+                        <td>$50,000.00</td>
+                        <td>$1,150,000.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-end"><strong>Saldo Final:</strong></td>
+                        <td>$1,150,000.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

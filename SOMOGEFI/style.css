@@ -1,0 +1,81 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #e0f7fa;
+  min-height: 100vh;
+}
+
+.navbar, .custom-navbar {
+  background-color: #247c86dd !important;
+  padding: 10px 20px;
+}
+
+.navbar-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #1e6a72;
+  border-radius: 5px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.welcome-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+.welcome-card h1 {
+  font-weight: 700;
+  color: #247c86;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.welcome-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-txt a {
+  color: #247c86;
+  text-decoration: none;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .welcome-card {
+      padding: 20px;
+  }
+}
