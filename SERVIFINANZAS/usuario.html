@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel del Usuario - Servifinanzas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cooperativa Servifinanzas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="usuario.html">Panel del Usuario</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="bienvenida">Bienvenido</h2>
+
+      <div class="panel-opciones">
+        <button onclick="alert('Estado de cuenta disponible próximamente')">📄 Ver estado de cuenta</button>
+        <button onclick="alert('Saldo disponible próximamente')">💰 Consultar saldo</button>
+        <button onclick="alert('Trámite de crédito disponible próximamente')">📝 Tramitar crédito</button>
+        <button onclick="alert('Pagos electrónicos disponible próximamente')">💳 Realizar pagos</button>
+        <button onclick="alert('Certificados disponibles próximamente')">📄 Generar certificados</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cooperativa Servifinanzas - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/usuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de crédito - Servifinanzas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cooperativa Servifinanzas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="simulador.html">Simulador de crédito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Simulador de Crédito</h2>
+      <p>Ingresa tus datos para conocer el monto aproximado al que puedes acceder:</p>
+
+      <form>
+        <label for="ahorro">Monto de ahorro (COP):</label><br>
+        <input type="number" id="ahorro" name="ahorro" required><br><br>
+
+        <label for="ingreso">Ingreso mensual (COP):</label><br>
+        <input type="number" id="ingreso" name="ingreso" required><br><br>
+
+        <label for="plazo">Plazo del crédito (meses):</label><br>
+        <input type="number" id="plazo" name="plazo" required><br><br>
+
+        <input type="submit" value="Simular crédito">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cooperativa Servifinanzas - Todos los derechos reservados</p>
+  </footer>
+  <script src="js/simulador.js"></script>
+</body>
+</html>

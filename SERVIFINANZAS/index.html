@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooperativa Servifinanzas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cooperativa Servifinanzas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="simulador.html">Simulador de crédito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bienvenido a Servifinanzas</h2>
+      <p>Tu cooperativa de confianza para el ahorro y el crédito responsable.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cooperativa Servifinanzas - Todos los derechos reservados</p>
+  </footer>
+  <script src="js/login.js"></script>
+  <script src="js/validaciones.js"></script>
+</body>
+<!-- Modal de INICIO DE SESIÓN -->
+<div id="modal-login" class="modal">
+  <div class="modal-content">
+    <h2>Bienvenido a Servifinanzas</h2>
+    <p>Por favor inicia sesión o crea una cuenta para continuar.</p>
+    
+    <form>
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" required><br><br>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <button type="button" onclick="cerrarModal()">Cerrar</button>
+    <button type="button" onclick="abrirModalRegistro()">Crear cuenta</button>
+  </div>
+</div>
+
+<!-- Modal de REGISTRO DE CUENTA -->
+<div id="modal-registro" class="modal">
+  <div class="modal-content">
+    <h2>Crear cuenta</h2>
+    <form onsubmit="return registrarCuenta()">
+      <label for="nuevoUsuario">Usuario:</label><br>
+      <input type="text" id="nuevoUsuario" required><br><br>
+
+      <label for="nuevoCorreo">Correo electrónico:</label><br>
+      <input type="email" id="nuevoCorreo" required><br><br>
+
+      <label for="nuevaPassword">Contraseña:</label><br>
+      <input type="password" id="nuevaPassword" required><br><br>
+
+      <input type="submit" value="Registrarme">
+      <button type="button" onclick="cerrarModalRegistro()">Cancelar</button>
+    </form>
+  </div>
+</div>
+</html>
